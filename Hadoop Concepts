@@ -1,2 +1,45 @@
-Input Split:
-Mapreduce 
+1)What is inputsplit and how to configure mappers based on need?
+Input Split is logical split of your data, basically used during data processing in MapReduce program or other processing techniques. 
+Input Split size is user defined value and Hadoop Developer can choose split size based on the size of data(How much data you are processing).
+Input split is used to control the number of Mappers in MapReduce program. Input split takes the default size of block size when not specified.
+
+2)Hadoop config files in details.
+The hadoop configuration files specify the environment variables and inform Hadoop Where namenodes run in cluster.
+
+• hadoop-env.sh
+• core-site.xml
+• hdfs-site.xml
+• mapred-site.xml
+• masters
+• slaves
+3)what is block in hdfs
+In HDFS, very large files across machines in large cluster are stored in sequence of block with a difault sizer of 64mb each except the last block.
+4)what is hdfs
+Hadoop distributed File System is distributed file system designed to run on commodity hardware.
+5)what is mapreduce?
+Mapreduce is the core component of Apache Hadoop framework
+Hadoop Enables distributed processing of massive unstructered
+data sets across commodity computer clusters, in which each node
+of the cluster includes its own storage.
+Mapreduce parcels out work to variousnodes within the cluster
+and it organizes and reduces the results from each node
+into a cohesive answer to query.
+6)Diffent stages of mapreduce
+The different stages of the mapreduce are:
+Input, Splitting, Mapping, shuffling, Reducting and
+final result
+
+7)How shuffle works in mapreduce?
+The shuffling process is carried out by the Framework
+in mapreduce process. Data from the mappers
+are grouped by key, split among reducers and sorted by the key
+Each reducer obtains all values associated with the same key.
+
+8)where is mapper output written ?
+Mapper output is written in the local machine where exactly the mapper is launched
+
+9)what is combiner?
+A combiner is semi-reducer phase that operates between the map and reduce phases to reduce the volume of the data transfer between Map and Reduce.
+10)what is partitioner ?
+Partitioner in Mapreduce controls the partitioning of the key of intermediate mapper output using hash function or a subset of the key.
+The number of partitooner depends on the number of reduce task.
