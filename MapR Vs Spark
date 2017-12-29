@@ -1,0 +1,16 @@
+Spark is general purpose compute engine, that allows to run batch, interactive 
+and streaming jobs on the cluster using a same unified frame.
+Mapreduce is the core component of Apache Hadoop framework
+Hadoop Enables distributed processing of massive unstructered
+data sets across commodity computer clusters, in which each node
+of the cluster includes its own storage.
+Mapreduce parcels out work to variousnodes within the cluster
+and it organizes and reduces the results from each node
+into a cohesive answer to query.
+
+MapReduce involves in numerous reads and writes making it slow and time consuming compared to spark
+Some of the benefits of the spark are:
+Fault Recovery: The RDDS in the spark are built on lineage graph, in case of failure they can go back and regenerate the RDD.
+Optimed: 
+Easy Programming
+Rich Library support for Machine Learning, GraphX and DataFrames
